@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category</title>
+    <link rel="stylesheet" href="options.css">
+</head>
+
+<body>
+    <div class="main">
+        <form class="category_form" name="category_form" onsubmit="submitForm(event)">
+            <label for="category">Choose a category:</label>
+            <br>
+            <select name="categorys" id="category">
+                <option value="gk">General Knowledge</option>
+                <option value="science&nature">Science & Nature</option>
+                <option value="computers">Computers</option>
+                <option value="animals">Animals</option>
+                <option value="history">History</option>
+            </select>
+            <br><br>
+        </form>
+
+        <form class="level_form" name="level_form" onsubmit="submitForm(event)">
+            <label for="level">Choose a level:</label>
+            <br>
+            <select name="levels" id="level">
+                <option value="0">Easy</option>
+                <option value="1">Medium</option>
+                <option value="2">Hard</option>
+            </select>
+            <br><br>
+            <button class="btn" type="submit">Start the Quiz</button>
+        </form>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+
+</html>
